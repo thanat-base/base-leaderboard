@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import color from "../../../constant/color";
+import color from "../../constant/color";
 
 const MobileLandingScreen = () => {
   return (
