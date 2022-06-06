@@ -1,0 +1,23 @@
+import { StatusBar } from "expo-status-bar";
+import { Platform, StyleSheet, Text, View } from "react-native";
+import WebLandingScreen from "./src/assets/web/screens/WebLandingScreen";
+import MobileLandingScreen from "./src/assets/mobile/screens/MobileLandingScreen";
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      {Platform.OS === "web" && <WebLandingScreen />}
+      {Platform.OS === ("android" || "ios") && <MobileLandingScreen />}
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
