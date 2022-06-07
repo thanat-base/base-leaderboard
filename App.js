@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
-import { Platform, StyleSheet, Text, View } from "react-native";
-import WebLandingScreen from "./src/web/screens/WebLandingScreen";
-import MobileLandingScreen from "./src/mobile/screens/MobileLandingScreen";
+import { Platform, StyleSheet, Text, View } from "react-native"
+import WebLandingScreen from "./src/web/screens/WebLandingScreen"
+import MobileLandingScreen from "./src/mobile/screens/MobileLandingScreen"
 
 export default function App() {
   return (
@@ -18,8 +18,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: "#ffffff",
   },
 });
